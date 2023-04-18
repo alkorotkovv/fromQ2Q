@@ -242,26 +242,26 @@ body {
      &__icon {
           width: vw(78);
           height: vw(78);
-
+          
           line {
                @include anim();
           }
-
+     
           path:nth-child(1) {
                @include anim();
           }
-
+     
           &:hover {
                line {
                     stroke: $yellow;
                     @include anim();
                }
-
+     
                path:nth-child(1) {
                     fill: $orange;
                }
           }
-
+          
      }
 }
 
