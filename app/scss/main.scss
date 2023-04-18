@@ -27,6 +27,7 @@ $brown: #A54A3E;
 
 .wrapper {
      overflow: hidden;
+     min-width: 320px;
 }
 
 button {
@@ -39,12 +40,15 @@ button {
      padding: 0 vw(25);
      margin: 0 auto;
      max-width: 100%;
+     min-width: 320px;
 }
 
 body {
      background-color: #0D0D1A;
      color: #fff;
 }
+
+
 
 .main-header {
      position: relative;

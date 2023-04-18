@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/PlayfairDisplay-Regular.woff2) format("woff2");
+}
+
+@font-face {
+       font-family: 'Form-Bold';
+       font-style:  normal;
+       font-weight: 700;
+       font-display: swap;
+       src: url(../fonts/Form-Bold.woff2) format("woff2");
+     }
+
+@font-face {
+  font-family: 'RedHatDisplay-Regular';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/RedHatDisplay-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'RedHatDisplay-Regular';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/RedHatDisplay-Light.woff2) format("woff2");
+}

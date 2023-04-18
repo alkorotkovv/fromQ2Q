@@ -20,6 +20,15 @@ $font-RHD: "RedHatDisplay-Regular", sans-serif, Arial;
 
 // Color
 $green: #00C652;
+$pink: #EFA29E;
+$yellow: #F5F1D4;
+$orange: #F26553;
+$mint: #BEFFEF;
+$brown: #A54A3E;
+
+@function vw($value, $size: 1280) {
+	@return $value / $size * 100vw;
+}
 
 // CSS
 

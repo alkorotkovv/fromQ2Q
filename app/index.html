@@ -12,55 +12,84 @@
    <title>Title</title>
 
    <link rel="icon" href="">
-   <link rel="stylesheet" href="css/app.min.css?var=4.0">
+   <link rel="stylesheet" href="css/styles.css">
 
-
+      
+<!--
    <script src="libs/gsap/gsap.min.js" defer></script>
    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
    <script defer src="js/app.min.js?var=1.0" defer></script>
-
+-->
 
 </head>
 
 <body>
 
-   <div class="wrapper">
-      <div class="content">
+	<div class="wrapper">
+  	<div class="content">
 
-         <div class="main-header">
-
-            <div class="logo">
-               <img class="logo__img" src="img/logo.svg" alt="">
+    	<div class="main-header">
+        <img class="logo" src="./img/logo.svg" alt="logo">
+        <img class="main-header__background" src="./img/main-header/main-header-background.png" alt="back">
+        <img class="main-header__rocket" src="./img/main-header/main-header-sputnik.svg" alt="rocket">
+        <img class="main-header__animal" src="./img/main-header/main-header-animal.svg" alt="animal">
+        <div class="main-header__girl-block">
+          <!--
+          <img class="main-header__girl" src="./img/main-header/smart_trade_news_1.png" alt="girl">
+          <div class="main-header__circle-block">
+            <img class="main-header__circle main-header__circle_1" src="./img/dialog-circle/dialog-circle-1.svg" alt="circle">
+            <img class="main-header__circle main-header__circle_2" src="./img/dialog-circle/dialog-circle-2.svg" alt="circle">
+            <img class="main-header__circle main-header__circle_3" src="./img/dialog-circle/dialog-circle-3.svg" alt="circle">
+          </div>
+        </div>
+        -->
+          <div class="main-header-img-dream-girl">
+            <div class="main-header-img-dream-girl__1">
+              <img src="img/main-header/smart_trade_news_1.png" alt="">
             </div>
-
-            <div class="main-header-img">
-               <div class="main-header-img__bgc">
-                  <img class="main-header-img__img" src="img/main-header/main-header-1.png" alt="">
-               </div>
-               <div class="main-header-img__1">
-                  <img class="main-header-img__img" src="img/main-header/main-header-2.svg" alt="">
-               </div>
-               <div class="main-header-img__2">
-                  <img class="main-header-img__img" src="img/main-header/main-header-4.svg" alt="">
-               </div>
+            <div class="main-header-img-dream-girl__dialor-circle">
+              <img class="main-header-img-dream-girl__dialor-circle-1" src="./img/dialog-circle/dialog-circle-1.svg" alt="">
+              <img class="main-header-img-dream-girl__dialor-circle-2" src="./img/dialog-circle/dialog-circle-2.svg" alt="">
+              <img class="main-header-img-dream-girl__dialor-circle-3" src="./img/dialog-circle/dialog-circle-3.svg" alt="">
             </div>
+          </div>
+        </div>
+        <div class="header">
+          <div class="subscribe">
+            <span class="subscribe__text">Subscribe</span>
+            <svg class="subscribe__icon" width="113" height="32" viewBox="0 0 113 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9.80388C3.33333 15.6372 11.1 24.4039 23.5 12.8039C39 -1.69612 15.1509 -2.19612 15.5 7.80388C15.8491 17.8039 29.9891 30.304 41.5 30.304C61.5 30.304 75.5 9.80396 67.5 3.80396C59.5 -2.19604 54.6997 7.14886 58.5 12.8039C63 19.5 71.5 25.304 84 20.804C94 17.204 105.833 7.97062 110.5 3.80396M110.5 3.80396C108.5 4.63729 103.5 6.30396 99.5 6.30396M110.5 3.80396C110 5.63729 109.3 9.80396 110.5 11.804"
+                  stroke="#EFA29E" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="search">
+            <button class="search__button">
+              <img class="search__icon" src="./img/icon/search.svg" alt="search">
+            </button>
+            <input class="search__input" type="text">
+          <div class="search__menu">
+            <svg class="search__menu-icon" width="78" height="77" viewBox="0 0 78 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path
+                    d="M10.3206 30.1094C10.3206 30.1094 10.9436 28.2159 11.8186 26.6564C18.6154 18.949 28.7586 14.2709 39.3212 14.1097C50.8515 13.9336 68.7695 20.9991 69.8212 35.1097C71.384 56.0782 40.1864 64.6986 25.821 60.1096C13.8288 56.2788 4.41259 41.4609 10.3206 30.1094Z"
+                    fill="#F5F1D4" />
+                 <path
+                    d="M13.6736 24.6654C11.9717 25.0909 10.3206 30.1094 10.3206 30.1094C4.41259 41.4609 13.8288 56.2788 25.821 60.1096C40.1864 64.6986 71.384 56.0782 69.8212 35.1097C68.7695 20.9991 50.8515 13.9336 39.3212 14.1097C28.7122 14.2716 18.5263 18.9902 11.7292 26.7583"
+                    stroke="#A54A3E" stroke-width="2" stroke-linecap="round" />
+                 <path
+                    d="M11.3202 27.6094C0.820072 39.1094 -2.75654 58.9602 5.73509 69.134C16.1979 81.6694 38.708 71.7018 48.9139 64.4809C59.293 57.1376 63.6661 53.4705 70.3204 42.6094C76.9747 31.7482 78.8737 19.2718 74.8212 9.40166C68.0008 -7.20973 41.2806 5.2242 31.1158 9.40191"
+                    stroke="#A54A3E" stroke-width="2" stroke-linecap="round" />
+                 <line x1="24.8196" y1="34.1095" x2="49.8196" y2="34.1095" stroke="#F26553"
+                    stroke-width="2" />
+                 <line x1="24.8196" y1="42.1095" x2="49.8196" y2="42.1095" stroke="#F26553"
+                    stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+      </div>
 
-            <div class="main-header-img-dream-girl">
-               <div class="main-header-img-dream-girl__1">
-                  <img src="img/main-header/smart_trade_news_1.png" alt="">
-               </div>
-               <div class="main-header-img-dream-girl__dialor-circle">
-                  <img class="main-header-img-dream-girl__dialor-circle-1" src="img/dialog-circle/dialog-circle-1.svg"
-                     alt="">
-                  <img class="main-header-img-dream-girl__dialor-circle-2" src="img/dialog-circle/dialog-circle-2.svg"
-                     alt="">
-                  <img class="main-header-img-dream-girl__dialor-circle-3" src="img/dialog-circle/dialog-circle-3.svg"
-                     alt="">
-               </div>
-            </div>
+      <!--
 
-         </div>
 
          <header class="header">
             <div class="container">
@@ -635,7 +664,7 @@
 
       </div>
    </div>
-
+-->
 </body>
 
 </html>
