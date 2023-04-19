@@ -400,7 +400,7 @@ a:active {
   padding: 7.8125% 7.8125% 15.625% 7.8125%;
   justify-content: space-between;
   box-sizing: border-box;
-  gap: 1.5625%;
+  gap: 4.6875%;
   background-color: black;
 }
 @media (max-width: 768px) {
@@ -408,19 +408,19 @@ a:active {
     padding-top: 15.625%;
     flex-direction: column;
     align-items: center;
-    gap: 15.625%;
+    gap: 8vw;
   }
 }
 
 .main-quote {
   margin: 0;
   padding: 0;
-  width: calc(260px + 140 * (100vw - 320px) / 1600);
   display: flex;
   flex-direction: column;
-  gap: 1.5625%;
+  gap: 1vw;
   align-items: center;
   justify-content: start;
+  z-index: 1;
 }
 .main-quote_pink {
   color: #EFA29E;
@@ -430,21 +430,20 @@ a:active {
 }
 @media (max-width: 768px) {
   .main-quote {
-    width: calc(260px + 640 * (100vw - 320px) / 1600);
+    width: calc(260px + 440 * (100vw - 320px) / 1600);
     align-items: center;
+    gap: 4vw;
   }
 }
 .main-quote__tag {
+  margin: 0;
+  padding: 0;
   display: flex;
+  font-family: "Form-Bold";
+  text-transform: uppercase;
 }
 .main-quote__tag img {
-  height: 1.5625%;
   width: calc(40px + 60 * (100vw - 320px) / 1600);
-}
-@media (max-width: 768px) {
-  .main-quote__tag img {
-    height: 4.6875%;
-  }
 }
 .main-quote__title {
   margin: 0;
@@ -453,8 +452,9 @@ a:active {
   text-align: center;
   font-family: "Form-Bold";
   text-transform: uppercase;
-  font-size: 2.109375%;
-  line-height: 2.265625%;
+  font-size: calc(24px + 12 * (100vw - 320px) / 1600);
+  font-size: 2vw;
+  line-height: 1.1;
   letter-spacing: -1.3px;
 }
 @media (max-width: 768px) {
@@ -462,6 +462,51 @@ a:active {
     font-size: calc(24px + 16 * (100vw - 320px) / 1600);
     line-height: 1;
   }
+}
+
+.front {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: none;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .front {
+    display: flex;
+  }
+}
+.front__asteroids {
+  margin: 0;
+  padding: 0;
+  width: 46.875%;
+  position: absolute;
+  left: 0%;
+  top: 23.4375%;
+}
+.front__blick {
+  margin: 0;
+  padding: 0;
+  width: 15.625%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+.front__quazar {
+  margin: 0;
+  padding: 0;
+  width: 15.625%;
+  position: absolute;
+  left: 0%;
+  top: 78.125%;
+}
+.front__sputnik {
+  margin: 0;
+  padding: 0;
+  width: 39.0625%;
+  position: absolute;
+  right: -7.8125%;
+  top: 54.6875%;
 }
 
 .section_main-newsletter {
