@@ -1,0 +1,49 @@
+// Color
+$green: #00C652;
+$pink: #EFA29E;
+$yellow: #F5F1D4;
+$orange: #F26553;
+$mint: #BEFFEF;
+$brown: #A54A3E;
+
+@function vw($value, $size: 1920) {
+  @return calc($value / $size * 100%);
+}
+
+
+button {
+  background-color: inherit;
+  border: none;
+}
+
+body {
+  background-color: palegreen;
+  color: #fff;
+  min-width: 320px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 100vw;
+  //max-width: 1920px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input,
+textarea,
+a {
+
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
