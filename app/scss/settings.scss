@@ -6,9 +6,18 @@ $orange: #F26553;
 $mint: #BEFFEF;
 $brown: #A54A3E;
 
-@function vw($value, $size: 1920) {
+@mixin anim() {
+  transition: all .2s ease-in-out;
+}
+
+@function vw($value, $size: 1280) {
   @return calc($value / $size * 100%);
 }
+
+
+//@function vvww($min, $max, $size: 1280) {
+//  @return calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - 320px) / (#{$size} - 320)));
+//}
 
 
 button {

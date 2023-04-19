@@ -23,11 +23,11 @@
     margin: 0;
     padding: 0;
     //width: calc(40px + (200 - 40) * ((100vw - 320px) / (1920 - 320)));
-    width: vw(200);
+    width: vw(120);
     display: flex;
     position: absolute;
-    top: vw(43);
-    right: vw(23);
+    top: vw(30);
+    right: vw(50);
     user-select: none;
   }
 
@@ -35,21 +35,21 @@
     margin: 0;
     padding: 0;
     //width: calc(80px + (200 - 80) * ((100vw - 320px) / (1920 - 320)));
-    width: vw(300);
+    width: vw(200);
     display: flex;
     position: absolute;
-    top: vw(250);
-    left: vw(200);
+    top: vw(140);
+    left: vw(140);
     user-select: none;
   }
 
   &__girl-block {
     margin: 0;
     padding: 0;
-    width: vw(350);
+    width: vw(200);
     display: flex;    
     position: absolute;
-    top: vw(1000);
+    top: vw(650);
     left: 0;
     user-select: none;
   }
@@ -68,21 +68,21 @@
     position: absolute;
 
     &_1 {
-      width: vw(200);
-      right: vw(-100);
-      top: vw(-20);
+      width: vw(140);
+      right: vw(-60);
+      top: vw(-80);
     }
 
     &_2 {
-      width: vw(100);
+      width: vw(70);
       right: vw(40);
-      top: vw(100);
+      top: vw(30);
     }
 
     &_3 {
-      width: vw(50);
-      right: vw(150);
-      top: vw(150);
+      width: vw(40);
+      right: vw(120);
+      top: vw(80);
     }
   }
 
@@ -92,25 +92,21 @@
 .logo {
   margin: 0;
   padding: 0;
-  width: calc(115px + (500 - 115) * ((100% - 320px) / (1920 - 320)));
-  width: vw(500);
+  //width: calc(115px + (500 - 115) * ((100% - 320px) / (1920 - 320)));
+  width: vw(370);
   user-select: none;
   display: flex;
   position: absolute;
   z-index: 2;
-  top: vw(200);
-  //margin-left: vw(0);
-  //text-align: center;
-  //left: 50%;
-  //transform: translateX(-50%);
+  top: vw(100);
 }
 
 .header {
   margin: 0;
-  padding: vw(100) vw(100) vw(40) vw(200);
+  padding: vw(40) vw(70) vw(20) vw(140);
   width: 100%;
   //height: calc(80px + (200 - 80) * ((100vw - 320px) / (1920 - 320)));
-  min-height: 15vw;
+  min-height: vw(120);
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -143,11 +139,11 @@
   &__icon {
     display: flex;
     vertical-align: middle;
-    width: 10vw;
-    height: 2vw;
+    width: 12vw;
+    height: 3vw;
 
     path {
-       //  @include anim();
+      @include anim();
     }
 }
 }
