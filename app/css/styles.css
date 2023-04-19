@@ -681,4 +681,34 @@ a:active {
   display: flex;
 }
 
+.section_second-articles {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 7.03125%;
+  background-color: aquamarine;
+}
+
+.second-articles {
+  margin: 0;
+  padding: 0 7.03125%;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+}
+
+.article {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */
