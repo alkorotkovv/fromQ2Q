@@ -28,6 +28,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+      & {
+        flex-direction: column;
+      }
+    }
   }
 
   &__item {
@@ -37,6 +43,12 @@
     display: flex;
     flex-direction: column;
     width: vw(200);
+
+    @media (max-width: 768px) {
+      & {
+        width: 50vw;
+      }
+    }
   }
 
   &__item-title {
@@ -47,6 +59,12 @@
     font-family: "Form-Bold";
     font-size: 2vw;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      & {
+        font-size: 8vw;
+      }
+    }
   }
 
   &__item-text {
@@ -60,6 +78,11 @@
     font-size: 1.3vw;
     line-height: 1;
     
+    @media (max-width: 768px) {
+      & {
+        font-size: 3vw;
+      }
+    }
   }
 
   &__logo {
@@ -67,6 +90,12 @@
     padding: 0;
     display: flex;
     width: 10vw;
+
+    @media (max-width: 768px) {
+      & {
+        display: none;
+      }
+    }
   }
 
   &__logo-img {
@@ -80,7 +109,14 @@
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    gap: 15vw;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      & {
+        padding-top: vw(160);
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   &__copyright {
@@ -92,14 +128,30 @@
     font-size: 1vw;
     text-transform: uppercase;
     color: $yellow;
+
+    @media (max-width: 768px) {
+      & {
+        padding-top: 6vw;
+        padding-bottom: 4vw;
+        font-size: 3vw;
+        max-width: 60vw;
+      }
+    }
   }
 
   &__socials {
-    margin: 0 0 0 auto;
+    margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
     gap: 0.2vw;
     list-style-type: none;
+
+    @media (max-width: 768px) {
+      & {
+        justify-content: space-between;
+      }
+    }
   }
 
   &__social {
@@ -119,16 +171,29 @@
       width: 100%;
       height: auto;
     }
+
+    @media (max-width: 768px) {
+      & {
+        width: 12vw;
+      }
+    }
   }
 
   &__science {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 14vw;
     display: flex;
     font-family: "Form-Bold";
     font-size: 1vw;
     text-transform: uppercase;
     color: $yellow;
+
+    @media (max-width: 768px) {
+      & {
+        font-size: 3vw;
+        padding-left: 10vw;
+      }
+    }
     
   }
 
@@ -149,6 +214,12 @@
     height: auto;
   }
 
+  @media (max-width: 768px) {
+    & {
+      width: vw(800);
+    }
+  }
+
 }
 
 .ask {
@@ -167,6 +238,12 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    @media (max-width: 768px) {
+      & {
+        padding-top: 5vw;
+      }
+    }
   }
 
   &__title {
@@ -181,7 +258,15 @@
     text-transform: uppercase;
     word-wrap: break-all;
     
-    
+    @media (max-width: 768px) {
+      & {
+        font-size: 40vw;
+        line-height: 0.8;
+        text-align: center;
+        z-index: 1;
+      }
+    }
+
   }
 
   &__rocket {
@@ -191,6 +276,14 @@
     position: absolute;
     top: -4vw;
     left: 20vw;
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      & {
+        left: 51vw;
+        top: -8vw;
+      }
+    }
   }
 
   &__rocket-1 {
@@ -198,6 +291,12 @@
     padding: 0;
     display: flex;
     width: 25vw;
+
+    @media (max-width: 768px) {
+      & {
+        width: 46vw;
+      }
+    }
   }
 
   &__rocket-2 {
@@ -208,6 +307,14 @@
     position: absolute;
     left: 12vw;
     top: 16vw;
+
+    @media (max-width: 768px) {
+      & {
+        width: 28vw;
+        left: 24vw;
+        top: 32vw;
+      }
+    }
   }
 
   &__els {
@@ -217,6 +324,12 @@
     position: absolute;
     top: 10vw;
     left: 0;
+
+    @media (max-width: 768px) {
+      & {
+        top: 30vw;
+      }
+    }
   }
 
   &__wave-big {
@@ -224,6 +337,12 @@
     padding: 0;
     width: 40vw;
     display: flex;
+
+    @media (max-width: 768px) {
+      & {
+        width: 100vw;
+      }
+    }
   }
 
   &__wave-small {
@@ -234,6 +353,13 @@
     position: absolute;
     top: 5vw;
     left: 0;
+
+    @media (max-width: 768px) {
+      & {
+        width: 100vw;
+        top: 25vw;
+      }
+    }
   }
 
 }
