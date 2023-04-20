@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
           document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
      })
 
+     /*
      gsap.to(".front-el__2", {
           scale: 1,
           y: 100,
@@ -72,5 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
      })
 
-
+*/
 })

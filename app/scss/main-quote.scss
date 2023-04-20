@@ -1,4 +1,3 @@
-
 .section {
 
   &_main-quotes {
@@ -7,7 +6,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     gap: vw(60);
-    background-color: black;
+    background-color: transparent;
 
     @media (max-width: 768px) {
       & {

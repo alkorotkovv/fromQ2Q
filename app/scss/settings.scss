@@ -10,10 +10,21 @@ $brown: #A54A3E;
   transition: all .2s ease-in-out;
 }
 
+@keyframes swing {
+  from {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
 @function vw($value, $size: 1280) {
   @return calc($value / $size * 100%);
 }
-
 
 //@function vvww($min, $max, $size: 1280) {
 //  @return calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - 320px) / (#{$size} - 320)));
@@ -26,7 +37,7 @@ button {
 }
 
 body {
-  background-color: palegreen;
+  background-color: #0D0D1A;
   color: #fff;
   min-width: 320px;
 }

@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: black;
+  background-color: transparent;
   
   
   &__background {    
@@ -17,6 +17,7 @@
     width: 100%;
     display: flex;
     user-select: none;
+
   }
 
   &__rocket {
@@ -29,6 +30,7 @@
     top: vw(30);
     right: vw(50);
     user-select: none;
+    animation: swing 5s linear infinite;
   }
 
   &__animal {
@@ -41,6 +43,7 @@
     top: vw(140);
     left: vw(140);
     user-select: none;
+    animation: swing 5s linear infinite;
   }
 
   &__girl-block {
@@ -99,6 +102,7 @@
   position: absolute;
   z-index: 2;
   top: vw(100);
+  animation: swing 5s linear infinite;
 }
 
 .header {
@@ -120,9 +124,21 @@
   padding: 0;
   box-sizing: border-box;
   display: flex;
+  gap: 1vw;
   align-items: center;
-  gap: vw(10);
   cursor: pointer;
+
+  &:hover &__text {
+      @include anim();
+      color: $orange;
+  }
+
+  &:hover &__icon {
+    path {
+      @include anim();
+      stroke: $orange;
+    }
+  }
 
   &__text {
     margin: 0;
@@ -133,17 +149,18 @@
     font-style: italic;
     color: $pink;
     font-size: 2vw;
-    
+    @include anim();
   }
 
   &__icon {
     display: flex;
     vertical-align: middle;
     width: 12vw;
-    height: 3vw;
+    height: auto;
 
     path {
       @include anim();
+      stroke: $pink;
     }
 }
 }

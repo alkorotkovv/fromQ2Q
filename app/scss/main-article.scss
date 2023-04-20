@@ -1,3 +1,22 @@
+.section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  &_main-article {
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: transparent;    
+
+    @media (max-width: 768px) {
+      & {
+        padding-bottom: vw(100);
+      }
+    }
+  }
+}
 
 .article-main {
   margin: 0;
@@ -113,28 +132,6 @@
     height: 100%;
     object-fit: cover;
   }
-}
-
-.section {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  position: relative;
-
-  &_main-article {
-    box-sizing: border-box;
-    flex-direction: column;
-    background-color: black;
-    
-
-    @media (max-width: 768px) {
-      & {
-        padding-bottom: vw(100);
-      }
-    }
-  }
-
 }
 
 .front-el {
