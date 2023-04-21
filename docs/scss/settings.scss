@@ -1,3 +1,23 @@
+// Fonts
+$font-PD: "PlayfairDisplay-Regular", sans-serif, Arial;
+$font-Form: "Form-Bold", sans-serif, Arial;
+$font-RHD: "RedHatDisplay-Regular", sans-serif, Arial;
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('PlayfairDisplay-Regular', normal, 400, '../fonts/PlayfairDisplay-Regular.woff2');
+@include font('Form-Bold', normal, 700, '../fonts/Form-Bold.woff2');
+
+@include font('RedHatDisplay-Regular', normal, 400, '../fonts/RedHatDisplay-Regular.woff2');
+@include font('RedHatDisplay-Regular', normal, 300, '../fonts/RedHatDisplay-Light.woff2');
+
 // Color
 $green: #00C652;
 $pink: #EFA29E;
@@ -47,7 +67,6 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  overflow: hidden;
   min-width: 320px;
   max-width: 100vw;
   overflow: hidden;
@@ -55,7 +74,7 @@ body {
 
 .content {
   width: 100%;
-  
+  overflow: hidden;
 }
 
 
