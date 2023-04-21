@@ -209,6 +209,7 @@
     display: flex;
     margin-left: vw(100);
     cursor: pointer;
+    box-sizing: border-box;
   }
 
   &__menu-icon {
@@ -218,21 +219,38 @@
     
 
     line {
-      transition: all .2s ease-in-out;
+      transform-origin: 50% 50%;
+      //transition: all .2s ease-in-out;
     }
     path:nth-child(1) {
       transition: all .2s ease-in-out;
     }
 
     &:hover {
+
+      rotate: 20deg;
+
       line {
         stroke: #F5F1D4;
-        transition: all .2s ease-in-out;
+        //transition: all .2s ease-in-out;        
+        rotate: -20deg;
       }
 
       path:nth-child(1) {
         fill: #F26553;
-       }
+        //transform-origin: 30%;
+        //rotate: 20deg;
+      }
+
+      path:nth-child(2) {
+        //transform-origin: 30%;
+        //rotate: 20deg;
+      }
+
+      path:nth-child(3) {
+        //transform-origin: 30%;
+        //rotate: 20deg;
+      }
     }
   }
 }

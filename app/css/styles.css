@@ -228,6 +228,7 @@ a {
   display: flex;
   margin-left: 7.8125%;
   cursor: pointer;
+  box-sizing: border-box;
 }
 .search__menu-icon {
   display: flex;
@@ -235,19 +236,21 @@ a {
   height: auto;
 }
 .search__menu-icon line {
-  transition: all 0.2s ease-in-out;
+  transform-origin: 50% 50%;
 }
 .search__menu-icon path:nth-child(1) {
   transition: all 0.2s ease-in-out;
 }
+.search__menu-icon:hover {
+  rotate: 20deg;
+}
 .search__menu-icon:hover line {
   stroke: #F5F1D4;
-  transition: all 0.2s ease-in-out;
+  rotate: -20deg;
 }
 .search__menu-icon:hover path:nth-child(1) {
   fill: #F26553;
 }
-
 .section {
   margin: 0;
   padding: 0;
