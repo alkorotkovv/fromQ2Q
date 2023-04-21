@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
      gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
      ScrollSmoother.create({
           wrapper: '.wrapper',
-          content: '.content'
+          content: '.content',
+          smooth: 5
      })
 
      window.addEventListener('scroll', e => {

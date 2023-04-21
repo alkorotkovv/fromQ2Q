@@ -10,15 +10,19 @@ $brown: #A54A3E;
   transition: all .2s ease-in-out;
 }
 
+@mixin rotate($time) {
+  animation: swing $time linear infinite;
+}
+
 @keyframes swing {
   from {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
   }
   50% {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
   to {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
   }
 }
 
@@ -29,7 +33,6 @@ $brown: #A54A3E;
 //@function vvww($min, $max, $size: 1280) {
 //  @return calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - 320px) / (#{$size} - 320)));
 //}
-
 
 button {
   background-color: inherit;
@@ -44,19 +47,17 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   overflow: hidden;
   min-width: 320px;
   max-width: 100vw;
-  //max-width: 1920px;
+  overflow: hidden;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  
 }
+
 
 input,
 textarea,

@@ -100,16 +100,15 @@
     }
   }
 
-  &__akbar {
+  &__akbar-block {
     margin: 0;
     padding: 0;
     display: flex;
     position: absolute;
-    right: vw(0);
-    top: vw(30);
-    width: vw(390);
+    width: 30vw;
+    right: 2vw;
+    top: 10vw;
     z-index: 2;
-    animation: swing 5s linear infinite;
 
     @media (max-width: 768px) {
       & {
@@ -118,6 +117,17 @@
         top: vw(450);
       }
     }
+  }
+
+  &__akbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;    
+    @include rotate(4s);
+
+    
+
   }
 
   &__wave {
@@ -156,6 +166,7 @@
     position: absolute;
     top: vw(-500);
     width: vw(350);
+    @include rotate(3s);
 
     @media (max-width: 768px) {
     & {
