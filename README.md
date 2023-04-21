@@ -1,1 +1,1 @@
-Ссылка на сайт https://alkorotkovv.github.io/russian-travel/app/index.html
+Ссылка на сайт https://github.com/alkorotkovv/fromQ2Q/app/index.html
