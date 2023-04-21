@@ -9,6 +9,7 @@ ScrollSmoother.create({
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /*
 gsap.to(".akbar", {
   scale: 1,
   y: 100,
@@ -23,4 +24,5 @@ gsap.to(".akbar", {
   }
 
 })
+*/
 })
