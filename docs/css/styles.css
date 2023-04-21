@@ -4,25 +4,25 @@
   font-family: "PlayfairDisplay-Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("PlayfairDisplay-Regular"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  src: local("PlayfairDisplay-Regular"), url("../vendor/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Form-Bold";
   font-style: normal;
   font-weight: 700;
-  src: local("Form-Bold"), url("../fonts/Form-Bold.woff2") format("woff2");
+  src: local("Form-Bold"), url("../vendor/fonts/Form-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "RedHatDisplay-Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("RedHatDisplay-Regular"), url("../fonts/RedHatDisplay-Regular.woff2") format("woff2");
+  src: local("RedHatDisplay-Regular"), url("../vendor/fonts/RedHatDisplay-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "RedHatDisplay-Regular";
   font-style: normal;
   font-weight: 300;
-  src: local("RedHatDisplay-Regular"), url("../fonts/RedHatDisplay-Light.woff2") format("woff2");
+  src: local("RedHatDisplay-Regular"), url("../vendor/fonts/RedHatDisplay-Light.woff2") format("woff2");
 }
 @keyframes swing {
   from {
@@ -658,14 +658,14 @@ a {
   position: absolute;
   width: 30vw;
   right: 2vw;
-  top: 10vw;
+  top: 0;
   z-index: 2;
 }
 @media (max-width: 768px) {
   .main-newsletter__akbar-block {
-    width: 78.125%;
-    right: -15.625%;
-    top: 35.15625%;
+    width: 60vw;
+    right: 0;
+    top: 100vw;
   }
 }
 .main-newsletter__akbar {

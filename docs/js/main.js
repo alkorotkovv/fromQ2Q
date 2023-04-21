@@ -7,22 +7,18 @@ ScrollSmoother.create({
   effects: true
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  /*
-gsap.to(".akbar", {
+/*
+gsap.to(".main-newsletter__akbar-block", {
   scale: 1,
-  y: 100,
+  y: 500,
   opacity: 1,
   duration: 50,
   transition: "linear",
   scrollTrigger: {
-       trigger: ".akbar",
-       start: "top 70%",
+       trigger: ".main-newsletter__akbar-block",
+       start: "top 80%",
        end: "bottom 20%",
-       scrub: 0,
+       scrub: true,
   }
-
 })
 */
-})

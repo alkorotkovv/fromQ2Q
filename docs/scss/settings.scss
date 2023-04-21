@@ -12,11 +12,11 @@ $font-RHD: "RedHatDisplay-Regular", sans-serif, Arial;
 	}
 }
 
-@include font('PlayfairDisplay-Regular', normal, 400, '../fonts/PlayfairDisplay-Regular.woff2');
-@include font('Form-Bold', normal, 700, '../fonts/Form-Bold.woff2');
+@include font('PlayfairDisplay-Regular', normal, 400, '../vendor/fonts/PlayfairDisplay-Regular.woff2');
+@include font('Form-Bold', normal, 700, '../vendor/fonts/Form-Bold.woff2');
 
-@include font('RedHatDisplay-Regular', normal, 400, '../fonts/RedHatDisplay-Regular.woff2');
-@include font('RedHatDisplay-Regular', normal, 300, '../fonts/RedHatDisplay-Light.woff2');
+@include font('RedHatDisplay-Regular', normal, 400, '../vendor/fonts/RedHatDisplay-Regular.woff2');
+@include font('RedHatDisplay-Regular', normal, 300, '../vendor/fonts/RedHatDisplay-Light.woff2');
 
 // Color
 $green: #00C652;

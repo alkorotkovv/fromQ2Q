@@ -108,14 +108,14 @@
     position: absolute;
     width: 30vw;
     right: 2vw;
-    top: 10vw;
+    top: 0;
     z-index: 2;
 
     @media (max-width: 768px) {
       & {
-        width: vw(1000);
-        right: vw(-200);
-        top: vw(450);
+        width: 60vw;
+        right: 0;
+        top: 100vw;
       }
     }
   }
