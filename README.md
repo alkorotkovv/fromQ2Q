@@ -1,1 +1,1 @@
-Ссылка на сайт https://github.com/alkorotkovv/fromQ2Q/
+https://alkorotkovv.github.io/fromQ2Q/
